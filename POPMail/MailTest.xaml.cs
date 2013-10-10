@@ -57,6 +57,8 @@ namespace POPMail
                 closeConnection(PopClient);
                 ItemListView.ItemsSource = messageHeaders;
                 MailCount.Text = numberOfMessages.ToString();
+
+                
             }
             catch
             {

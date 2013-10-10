@@ -9,7 +9,7 @@
     x:Name="pageRoot"
     x:Class="POPMail.MailTest"
     DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Mode=Self}}"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Background="White">
 
     <common:LayoutAwarePage.Resources>
 
@@ -73,15 +73,15 @@
 
         </Grid>
 
-        <Grid Margin="0" Grid.Row="3" HorizontalAlignment="Right" Width="1300">
-            <StackPanel x:Name="ContentPanel" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Height="600" Width="1200" Margin="0">
-                <ListView x:Name="ItemListView" Width="1200"  
-        		HorizontalAlignment="Left"
-        		ItemTemplate="{StaticResource StoreFrontTileTemplate}"
-        		ItemContainerStyle="{StaticResource StoreFrontLVTileStyle}"
-        		BorderBrush="LightGray"
-        		BorderThickness="1" VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Auto"
-        		ScrollViewer.HorizontalScrollBarVisibility="Auto" SelectionMode="Single" SelectionChanged="ItemListView_SelectionChanged" Margin="0"/>
+        <Grid Margin="0" Grid.Row="3" HorizontalAlignment="Center" Width="1100" Background="#FFDCF5FF" Height="600">
+            <StackPanel x:Name="ContentPanel" Orientation="Horizontal" Height="600" Width="1100" Margin="0">
+                <ListView x:Name="ItemListView" Width="1100"  
+        		    ItemTemplate="{StaticResource StoreFrontTileTemplate}"
+        		    ItemContainerStyle="{StaticResource StoreFrontLVTileStyle}"
+        		    ScrollViewer.VerticalScrollBarVisibility="Auto"
+        		    ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+                    SelectionMode="Single" 
+                    SelectionChanged="ItemListView_SelectionChanged"/>
             </StackPanel>
         </Grid>
 

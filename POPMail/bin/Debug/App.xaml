@@ -21,34 +21,30 @@
                 <Grid HorizontalAlignment="Left" Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
                     <StackPanel Orientation="Horizontal" Margin="0">
                         <StackPanel Margin="0" Orientation="Horizontal">
-                            <TextBlock TextWrapping="NoWrap" TextTrimming="WordEllipsis" Foreground="{StaticResource ApplicationForegroundThemeBrush}" Width="200" VerticalAlignment="Top" Text="{Binding Date}" HorizontalAlignment="Left"/>
-                            <TextBlock TextWrapping="Wrap" Foreground="{StaticResource ApplicationForegroundThemeBrush}" Width="700" VerticalAlignment="Top" Text="{Binding Subject}" HorizontalAlignment="Left"/>
-                            <TextBlock TextWrapping="Wrap" Foreground="{StaticResource ApplicationForegroundThemeBrush}" Width="250" VerticalAlignment="Top" Text="{Binding From}" HorizontalAlignment="Left"/>
+                            <TextBlock Name="MailListSubject" TextWrapping="NoWrap" TextTrimming="WordEllipsis" Width="550"
+                                       Text="{Binding Subject}" FontWeight="Bold" ToolTipService.ToolTip="{Binding Subject}"/>
+                            <TextBlock Name="MailListFrom" TextWrapping="NoWrap" TextTrimming="WordEllipsis" 
+                                       Foreground="{StaticResource ApplicationForegroundThemeBrush}" Width="370" 
+                                       Text="{Binding From}" ToolTipService.ToolTip="{Binding From}"/>
+                            <TextBlock Name="MailListDate" TextWrapping="NoWrap" TextTrimming="None" Width="180"
+                                       Text="{Binding Date}" ToolTipService.ToolTip="{Binding Date}"/>
                         </StackPanel>
                     </StackPanel>
                 </Grid>
             </DataTemplate>
 
-            <Style x:Key="StoreFrontTileStyle"  TargetType="GridViewItem">
+            <Style x:Key="StoreFrontLVTileStyle" TargetType="ListViewItem">
                 <Setter Property="FontFamily" Value="Segoe UI" />
                 <Setter Property="FontSize" Value="14" />
-                <Setter Property="Padding" Value="0" />
+                <Setter Property="Padding" Value="4,1" />
                 <Setter Property="Margin" Value="0" />
+                <Setter Property="Height" Value="45" />
                 <Setter Property="HorizontalContentAlignment" Value="Left" />
-                <Setter Property="VerticalContentAlignment" Value="Top" />
-                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="VerticalContentAlignment" Value="Center" />
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="BorderBrush" Value="LightGray" />
                 <Setter Property="TabNavigation" Value="Local" />
-            </Style>
-
-            <Style x:Key="StoreFrontLVTileStyle"  TargetType="ListViewItem">
-                <Setter Property="FontFamily" Value="Segoe UI" />
-                <Setter Property="FontSize" Value="14" />
-                <Setter Property="Padding" Value="0" />
-                <Setter Property="Margin" Value="0" />
-                <Setter Property="HorizontalContentAlignment" Value="Left" />
-                <Setter Property="VerticalContentAlignment" Value="Top" />
-                <Setter Property="BorderThickness" Value="0"/>
-                <Setter Property="TabNavigation" Value="Local" />
+                <Setter Property="Background" Value="White" />
             </Style>
 
         </ResourceDictionary>
