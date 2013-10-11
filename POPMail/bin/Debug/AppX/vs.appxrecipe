@@ -22,11 +22,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\bin\Debug\POPMail.exe">
       <PackagePath>POPMail.exe</PackagePath>
-      <Modified>2013-10-11T08:01:02.078</Modified>
+      <Modified>2013-10-11T10:01:24.306</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\bin\Debug\POPMail.pdb">
       <PackagePath>POPMail.pdb</PackagePath>
-      <Modified>2013-10-11T08:01:02.059</Modified>
+      <Modified>2013-10-11T10:01:24.267</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\bin\Debug\OpenPop.dll">
       <PackagePath>OpenPop.dll</PackagePath>
@@ -66,7 +66,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\bin\Debug\MailTest.xaml">
       <PackagePath>MailTest.xaml</PackagePath>
-      <Modified>2013-10-11T07:58:11.906</Modified>
+      <Modified>2013-10-11T10:01:16.972</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\bin\Debug\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>

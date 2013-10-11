@@ -79,7 +79,7 @@
         		    ItemContainerStyle="{StaticResource StoreFrontLVTileStyle}"
         		    ScrollViewer.VerticalScrollBarVisibility="Auto"
         		    ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
-                    SelectionMode="Single" 
+                    SelectionMode="Multiple" 
                                                                     />
             </StackPanel>
         </Grid>
