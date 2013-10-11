@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>EZTABLET</Machine>
-    <WindowsUser>Simons</WindowsUser>
+    <Machine>WIN-PIP700H7VSQ</Machine>
+    <WindowsUser>simon.sanders</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <RegisteredManifestChecksum>FCC680E328C90355056495A1AFE9B1B168C57FAD3B18C931B27388759DBF1C37</RegisteredManifestChecksum>
@@ -13,72 +13,72 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Projects\POPMail\POPMail\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-10-11T19:02:02.189</Modified>
+      <Modified>2013-09-27T08:23:59.845</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\POPMail.exe">
+    <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\bin\Debug\POPMail.exe">
       <PackagePath>POPMail.exe</PackagePath>
-      <Modified>2013-10-11T21:27:25.865</Modified>
+      <Modified>2013-10-11T10:01:24.306</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\POPMail.pdb">
+    <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\bin\Debug\POPMail.pdb">
       <PackagePath>POPMail.pdb</PackagePath>
-      <Modified>2013-10-11T21:27:25.830</Modified>
+      <Modified>2013-10-11T10:01:24.267</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\hpop\OpenPop\bin\Debug\OpenPop.dll">
+    <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\bin\Debug\OpenPop.dll">
       <PackagePath>OpenPop.dll</PackagePath>
-      <Modified>2013-09-15T17:12:46.908</Modified>
+      <Modified>2013-09-27T07:56:57.329</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\hpop\OpenPop\bin\Debug\OpenPop.pdb">
+    <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\bin\Debug\OpenPop.pdb">
       <PackagePath>OpenPop.pdb</PackagePath>
-      <Modified>2013-09-15T17:12:46.784</Modified>
+      <Modified>2013-09-27T07:56:57.332</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\Assets\Logo.png">
+    <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-03-15T19:42:52.000</Modified>
+      <Modified>2013-09-27T07:56:56.986</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\Assets\SmallLogo.png">
+    <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\Assets\SmallLogo.png">
       <PackagePath>Assets\SmallLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-03-15T19:42:52.000</Modified>
+      <Modified>2013-09-27T07:56:56.988</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-03-15T19:42:52.000</Modified>
+      <Modified>2013-09-27T07:56:56.989</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-03-15T19:42:52.000</Modified>
+      <Modified>2013-09-27T07:56:56.993</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\Common\ReadMe.txt">
+    <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\Common\ReadMe.txt">
       <PackagePath>Common\ReadMe.txt</PackagePath>
-      <Modified>2013-09-17T18:47:33.757</Modified>
+      <Modified>2013-09-27T07:56:57.041</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\App.xaml">
+    <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\bin\Debug\App.xaml">
       <PackagePath>App.xaml</PackagePath>
-      <Modified>2013-10-10T22:52:17.207</Modified>
+      <Modified>2013-10-11T08:01:00.423</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\MailTest.xaml">
+    <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\bin\Debug\MailTest.xaml">
       <PackagePath>MailTest.xaml</PackagePath>
-      <Modified>2013-10-11T21:25:51.419</Modified>
+      <Modified>2013-10-11T10:01:16.972</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\MainPage.xaml">
+    <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\bin\Debug\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
-      <Modified>2013-09-22T18:01:37.240</Modified>
+      <Modified>2013-09-27T07:56:57.099</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\Common\StandardStyles.xaml">
+    <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\bin\Debug\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>
-      <Modified>2012-06-26T15:19:20.000</Modified>
+      <Modified>2013-09-27T07:56:57.065</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Projects\POPMail\POPMail\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-09-22T18:02:09.780</Modified>
+      <Modified>2013-09-27T08:23:59.343</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

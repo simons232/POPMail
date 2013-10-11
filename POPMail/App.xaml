@@ -35,7 +35,7 @@
 
             <Style x:Key="StoreFrontLVTileStyle" TargetType="ListViewItem">
                 <Setter Property="FontFamily" Value="Segoe UI" />
-                <Setter Property="FontSize" Value="14" />
+                <Setter Property="FontSize" Value="11" />
                 <Setter Property="Padding" Value="4,1" />
                 <Setter Property="Margin" Value="0" />
                 <Setter Property="Height" Value="45" />
