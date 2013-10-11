@@ -17,10 +17,9 @@
         <x:String x:Key="AppName">POP.Mail</x:String>
     </common:LayoutAwarePage.Resources>
 
-    <Grid Style="{StaticResource LayoutRootStyle}" Height="768" VerticalAlignment="Top">
+    <Grid Style="{StaticResource LayoutRootStyle}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="140"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -61,7 +60,7 @@
         </VisualStateManager.VisualStateGroups>
 
         <!-- Back button and page title -->
-        <Grid Grid.RowSpan="2">
+        <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>

@@ -33,3 +33,33 @@ C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\obj\Debug\
 C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\obj\Debug\MailTest.g.cs
 C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\obj\Debug\MailTest.xaml
 C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\obj\Debug\POPMail.csproj.GenerateResource.Cache
+C:\Projects\POPMail\POPMail\bin\Debug\POPMail.exe
+C:\Projects\POPMail\POPMail\bin\Debug\POPMail.pdb
+C:\Projects\POPMail\POPMail\bin\Debug\resources.pri
+C:\Projects\POPMail\POPMail\bin\Debug\AppxManifest.xml
+C:\Projects\POPMail\POPMail\bin\Debug\POPMail.build.appxrecipe
+C:\Projects\POPMail\POPMail\bin\Debug\OpenPop.pdb
+C:\Projects\POPMail\POPMail\bin\Debug\OpenPop.xml
+C:\Projects\POPMail\POPMail\obj\Debug\POPMail.csprojResolveAssemblyReference.cache
+C:\Projects\POPMail\POPMail\obj\Debug\App.g.i.cs
+C:\Projects\POPMail\POPMail\obj\Debug\App.g.cs
+C:\Projects\POPMail\POPMail\obj\Debug\MailTest.g.i.cs
+C:\Projects\POPMail\POPMail\obj\Debug\MailTest.g.cs
+C:\Projects\POPMail\POPMail\obj\Debug\MainPage.g.i.cs
+C:\Projects\POPMail\POPMail\obj\Debug\MainPage.g.cs
+C:\Projects\POPMail\POPMail\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Projects\POPMail\POPMail\obj\Debug\Common\StandardStyles.g.cs
+C:\Projects\POPMail\POPMail\obj\Debug\XamlTypeInfo.g.cs
+C:\Projects\POPMail\POPMail\obj\Debug\App.xaml
+C:\Projects\POPMail\POPMail\obj\Debug\MailTest.xaml
+C:\Projects\POPMail\POPMail\obj\Debug\MainPage.xaml
+C:\Projects\POPMail\POPMail\obj\Debug\Common\StandardStyles.xaml
+C:\Projects\POPMail\POPMail\obj\Debug\POPMail.exe
+C:\Projects\POPMail\POPMail\obj\Debug\POPMail.pdb
+C:\Projects\POPMail\POPMail\obj\Debug\POPMail.csproj.GenerateResource.Cache
+C:\Projects\POPMail\POPMail\obj\Debug\priconfig.xml
+C:\Projects\POPMail\POPMail\obj\Debug\layout.resfiles
+C:\Projects\POPMail\POPMail\obj\Debug\resources.resfiles
+C:\Projects\POPMail\POPMail\obj\Debug\pri.resfiles
+C:\Projects\POPMail\POPMail\obj\Debug\LanguageQualifiers.txt
+C:\Projects\POPMail\POPMail\obj\Debug\ProjectArchitectures.txt
