@@ -16,17 +16,17 @@
     <AppXManifest Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-09-22T18:02:10.082</Modified>
+      <Modified>2013-10-11T19:02:02.189</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\POPMail.exe">
       <PackagePath>POPMail.exe</PackagePath>
-      <Modified>2013-10-10T22:52:19.699</Modified>
+      <Modified>2013-10-11T21:27:25.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\POPMail.pdb">
       <PackagePath>POPMail.pdb</PackagePath>
-      <Modified>2013-10-10T22:52:19.654</Modified>
+      <Modified>2013-10-11T21:27:25.830</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\hpop\OpenPop\bin\Debug\OpenPop.dll">
       <PackagePath>OpenPop.dll</PackagePath>
@@ -66,7 +66,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\MailTest.xaml">
       <PackagePath>MailTest.xaml</PackagePath>
-      <Modified>2013-10-10T22:22:59.458</Modified>
+      <Modified>2013-10-11T21:25:51.419</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>

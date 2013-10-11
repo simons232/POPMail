@@ -73,16 +73,19 @@
 
         </Grid>
 
-        <Grid Margin="0" Grid.Row="3" HorizontalAlignment="Center" Width="1100" Background="#FFDCF5FF" Height="600">
-            <StackPanel x:Name="ContentPanel" Orientation="Horizontal" Height="600" Width="1100" Margin="0">
+        <Grid Margin="133,56,133,34" Grid.Row="2" HorizontalAlignment="Center" Width="1100" Background="#FFDCF5FF">
+            <StackPanel x:Name="ContentPanel" Orientation="Horizontal" Width="1100" Margin="0,0,0,0">
                 <ListView x:ConnectionId='1' x:Name="ItemListView" Width="1100"  
         		    ItemTemplate="{StaticResource StoreFrontTileTemplate}"
         		    ItemContainerStyle="{StaticResource StoreFrontLVTileStyle}"
         		    ScrollViewer.VerticalScrollBarVisibility="Auto"
         		    ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
-                    SelectionMode="Single" 
+                    SelectionMode="Multiple" 
                                                                     />
             </StackPanel>
+            <TextBlock HorizontalAlignment="Left" Margin="10,-20,0,0" TextWrapping="Wrap" Text="Subject" VerticalAlignment="Top" Width="142" Height="19" FontFamily="Segoe UI Light"/>
+            <TextBlock HorizontalAlignment="Left" Margin="560,-20,0,0" TextWrapping="Wrap" Text="From" VerticalAlignment="Top" Width="142" Height="19" FontFamily="Segoe UI Light"/>
+            <TextBlock HorizontalAlignment="Left" Margin="930,-20,0,0" TextWrapping="Wrap" Text="Date/Time" VerticalAlignment="Top" Width="142" Height="19" FontFamily="Segoe UI Light"/>
         </Grid>
 
 

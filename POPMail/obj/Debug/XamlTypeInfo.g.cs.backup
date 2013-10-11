@@ -116,9 +116,7 @@ namespace POPMail.POPMail_XamlTypeInfo
 
         private object Activate_1_MailTest() { return new global::POPMail.MailTest(); }
 
-        private object Activate_2_PhotoPage() { return new global::POPMail.PhotoPage(); }
-
-        private object Activate_3_MainPage() { return new global::POPMail.MainPage(); }
+        private object Activate_2_MainPage() { return new global::POPMail.MainPage(); }
 
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(string typeName)
@@ -148,15 +146,9 @@ namespace POPMail.POPMail_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case "POPMail.PhotoPage":
-                userType = new global::POPMail.POPMail_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::POPMail.PhotoPage), GetXamlTypeByName("POPMail.Common.LayoutAwarePage"));
-                userType.Activator = Activate_2_PhotoPage;
-                xamlType = userType;
-                break;
-
             case "POPMail.MainPage":
                 userType = new global::POPMail.POPMail_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::POPMail.MainPage), GetXamlTypeByName("POPMail.Common.LayoutAwarePage"));
-                userType.Activator = Activate_3_MainPage;
+                userType.Activator = Activate_2_MainPage;
                 xamlType = userType;
                 break;
 

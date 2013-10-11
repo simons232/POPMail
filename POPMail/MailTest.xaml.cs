@@ -34,6 +34,7 @@ namespace POPMail
         }
 
         private Pop3Client PopClient = new Pop3Client();
+        private int messageCount = 0;
         public string crlf = Environment.NewLine;
 
         /// <summary>
@@ -49,14 +50,13 @@ namespace POPMail
         {
             try
             {
-                openConnection(PopClient);
+                openConnection();
 
-                var numberOfMessages = getMessageCount(PopClient);
-                var messageHeaders = FetchAllHeaders(PopClient);
+                ItemListView.ItemsSource = FetchAllHeaders();
 
-                closeConnection(PopClient);
-                ItemListView.ItemsSource = messageHeaders;
-                MailCount.Text = numberOfMessages.ToString();
+                closeConnection();
+                
+                MailCount.Text = messageCount.ToString();
 
                 
             }
@@ -78,7 +78,7 @@ namespace POPMail
         {
         }
 
-        private void openConnection(Pop3Client thisPopClient)
+        private void openConnection()
         {
             var hostname = "pop.spamcop.net";
             var port = 110;
@@ -86,26 +86,22 @@ namespace POPMail
             var username = "simons@spamcop.net";
             var password = "in8dz1re";
 
-            thisPopClient.Connect(hostname, port, useSsl);
-            thisPopClient.Authenticate(username, password);
+            PopClient.Connect(hostname, port, useSsl);
+            PopClient.Authenticate(username, password);
         }
 
-        private void closeConnection(Pop3Client thisPopClient)
+        private void closeConnection()
         {
-            thisPopClient.Disconnect();
+            PopClient.Disconnect();
         }
         
-        private int getMessageCount(Pop3Client thisPopClient) {
-            return thisPopClient.GetMessageCount();
-        }
-
-        public static List<MessageHeader> FetchAllHeaders(Pop3Client thisPopClient)
+        private List<MessageHeader> FetchAllHeaders()
         {
-            int messageCount = thisPopClient.GetMessageCount();
+            messageCount = PopClient.GetMessageCount();
             List<MessageHeader> allMessageHeaders = new List<MessageHeader>(messageCount);
             for (int i = messageCount; i > 0; i--)
             {
-                allMessageHeaders.Add(thisPopClient.GetMessageHeaders(i));
+                allMessageHeaders.Add(PopClient.GetMessageHeaders(i));
             }
             return allMessageHeaders;
         }
