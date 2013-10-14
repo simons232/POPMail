@@ -125,7 +125,11 @@
     <None Include="POPMail_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\delete.png" />
     <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\MM-logo.png" />
+    <Content Include="Assets\refresh.png" />
+    <Content Include="Assets\settings-icon.png" />
     <Content Include="Assets\SmallLogo.png" />
     <Content Include="Assets\SplashScreen.png" />
     <Content Include="Assets\StoreLogo.png" />
