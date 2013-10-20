@@ -65,11 +65,28 @@ namespace POPMail
 
         private void openConnection()
         {
-            var hostname = "pop.spamcop.net";
+            var hostname = "";
             var port = 110;
             var useSsl = false;
-            var username = "simons@spamcop.net";
-            var password = "in8dz1re";
+            var username = "";
+            var password = "";
+
+            Windows.Storage.ApplicationDataContainer loadSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            
+            if (loadSettings.Values.ContainsKey("username"))
+            {
+                username = loadSettings.Values["username"].ToString();
+            }
+
+            if (loadSettings.Values.ContainsKey("server"))
+            {
+                hostname = loadSettings.Values["server"].ToString();
+            }
+
+            if (loadSettings.Values.ContainsKey("password"))
+            {
+                password = loadSettings.Values["password"].ToString();
+            }
 
             PopClient.Connect(hostname, port, useSsl);
             PopClient.Authenticate(username, password);
@@ -82,12 +99,19 @@ namespace POPMail
 
         private void fetchMessageHeaders()
         {
+            MailRefresh.Visibility = visible;
+            MailCountLabel.Visibility = hidden;
+            MailCount.Visibility = hidden;
             try
             {
                 openConnection();
                 ItemListView.ItemsSource = FetchAllHeaders();
                 closeConnection();
                 MailCount.Text = messageCount.ToString();
+                
+                MailCountLabel.Visibility = visible;
+                MailCount.Visibility = visible;
+                MailRefresh.Visibility = hidden;
             }
             catch
             {
@@ -115,9 +139,7 @@ namespace POPMail
 
         private void RefreshButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ItemListView.Visibility = hidden;
             fetchMessageHeaders();
-            ItemListView.Visibility = visible;
         }
     }
 }

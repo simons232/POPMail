@@ -22,11 +22,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\POPMail.exe">
       <PackagePath>POPMail.exe</PackagePath>
-      <Modified>2013-10-20T17:48:59.512</Modified>
+      <Modified>2013-10-20T22:06:04.706</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\POPMail.pdb">
       <PackagePath>POPMail.pdb</PackagePath>
-      <Modified>2013-10-20T17:48:59.469</Modified>
+      <Modified>2013-10-20T22:06:04.653</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\hpop\OpenPop\bin\Debug\OpenPop.dll">
       <PackagePath>OpenPop.dll</PackagePath>
@@ -86,11 +86,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\MailTest.xaml">
       <PackagePath>MailTest.xaml</PackagePath>
-      <Modified>2013-10-20T17:35:08.102</Modified>
+      <Modified>2013-10-20T21:53:23.841</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
-      <Modified>2013-10-20T17:35:08.091</Modified>
+      <Modified>2013-10-20T21:39:35.544</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>

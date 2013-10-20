@@ -37,17 +37,20 @@ namespace POPMail
         /// session.  This will be null the first time a page is visited.</param>
         protected override void LoadState(Object navigationParameter, Dictionary<String, Object> pageState)
         {
-            // Restore values stored in session state.
-            if (pageState != null && pageState.ContainsKey("greetingOutputText"))
-            {
-                greetingOutput.Text = pageState["greetingOutputText"].ToString();
-            }
             // Restore values stored in app data.
             //Windows.Storage.ApplicationDataContainer loadSettings = Windows.Storage.ApplicationData.Current.RoamingSettings;
             Windows.Storage.ApplicationDataContainer loadSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-            if (loadSettings.Values.ContainsKey("userName"))
+            if (loadSettings.Values.ContainsKey("server"))
             {
-                nameInput.Text = loadSettings.Values["userName"].ToString();
+                serverInput.Text = loadSettings.Values["server"].ToString();
+            }
+            if (loadSettings.Values.ContainsKey("username"))
+            {
+                nameInput.Text = loadSettings.Values["username"].ToString();
+            }
+            if (loadSettings.Values.ContainsKey("password"))
+            {
+                passwordInput.Password = loadSettings.Values["password"].ToString();
             }
         }
 
@@ -57,29 +60,33 @@ namespace POPMail
         /// requirements of <see cref="SuspensionManager.SessionState"/>.
         /// </summary>
         /// <param name="pageState">An empty dictionary to be populated with serializable state.</param>
-        protected override void SaveState(Dictionary<String, Object> pageState)
-        {
-            pageState["greetingOutputText"] = greetingOutput.Text;
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            greetingOutput.Text = "Hello, " + nameInput.Text + "!";
-        }
-
-        private void nameInput_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            //Windows.Storage.ApplicationDataContainer saveSettings = Windows.Storage.ApplicationData.Current.RoamingSettings;
-            Windows.Storage.ApplicationDataContainer saveSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-            saveSettings.Values["userName"] = nameInput.Text;
-        }
-
         private void MailTestPageButton_Click(object sender, RoutedEventArgs e)
         {
             if (this.Frame != null)
             {
                 this.Frame.Navigate(typeof(MailTest));
             }
+        }
+
+        private void nameInput_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            //Windows.Storage.ApplicationDataContainer saveSettings = Windows.Storage.ApplicationData.Current.RoamingSettings;
+            Windows.Storage.ApplicationDataContainer saveSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            saveSettings.Values["username"] = nameInput.Text;
+        }
+
+        private void serverInput_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            //Windows.Storage.ApplicationDataContainer saveSettings = Windows.Storage.ApplicationData.Current.RoamingSettings;
+            Windows.Storage.ApplicationDataContainer saveSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            saveSettings.Values["server"] = serverInput.Text;
+        }
+
+        private void passwordInput_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            //Windows.Storage.ApplicationDataContainer saveSettings = Windows.Storage.ApplicationData.Current.RoamingSettings;
+            Windows.Storage.ApplicationDataContainer saveSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            saveSettings.Values["password"] = passwordInput.Password;
         }
     }
 }

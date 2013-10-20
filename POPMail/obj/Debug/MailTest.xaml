@@ -67,10 +67,11 @@
             </Grid.ColumnDefinitions>
             <Button x:ConnectionId='2' x:Name="backButton"                IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"/>
             <TextBlock x:Name="MailError" HorizontalAlignment="Left" Height="37" Margin="146,68,0,0" TextWrapping="Wrap" Text="Mail connection error" VerticalAlignment="Top" Width="237" FontFamily="Global User Interface" FontSize="24" Foreground="#FFDE1E1E" Grid.ColumnSpan="2" Visibility="Collapsed"/>
+            <TextBlock x:Name="MailRefresh" HorizontalAlignment="Left" Height="37" Margin="146,68,0,0" TextWrapping="Wrap" Text="Checking mail..." VerticalAlignment="Top" Width="237" FontFamily="Global User Interface" FontSize="24" Foreground="#FF20932B" Grid.ColumnSpan="2" Visibility="Collapsed"/>
             <TextBlock x:Name="MailCountLabel" HorizontalAlignment="Left" Height="24" Margin="25,68,0,0" TextWrapping="Wrap" Text="Mail count:" VerticalAlignment="Top" Width="122" FontFamily="Global User Interface" FontSize="24" Grid.Column="1"/>
             <TextBlock x:Name="MailCount" HorizontalAlignment="Left" Margin="152,69,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="top" Height="30" Width="41" FontFamily="Global User Interface" FontSize="24" Grid.Column="1"/>
-            <Image x:ConnectionId='3' x:Name="RefreshButton" Grid.Column="1" HorizontalAlignment="Center" Height="50" Margin="366,56,817,0" VerticalAlignment="Top" Width="63" Source="Assets/refresh.png"                               />
-            <Image Grid.Column="1" HorizontalAlignment="Center" Height="50" Margin="438,56,704,0" VerticalAlignment="Top" Width="63" Source="Assets/delete.png" />
+            <Image x:ConnectionId='3' x:Name="RefreshButton" Grid.Column="1" HorizontalAlignment="Center" Height="50" Margin="366,56,817,0" VerticalAlignment="Top" Width="63" Source="Assets/refresh.png"                              />
+            <Image Grid.Column="1" HorizontalAlignment="Center" Height="50" Margin="438,56,704,0" VerticalAlignment="Top" Width="63" Source="Assets/delete.png"/>
             <Image Grid.Column="1" HorizontalAlignment="Right" Height="57" Margin="0,51,167,0" VerticalAlignment="Top" Width="269" Source="Assets/MM-text.png"/>
             <Image Grid.Column="1" HorizontalAlignment="Right" Height="60" Margin="0,52,52,0" VerticalAlignment="Top" Width="100" Source="Assets/MM-logo.png"/>
         </Grid>

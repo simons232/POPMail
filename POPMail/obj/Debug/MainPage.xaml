@@ -77,19 +77,30 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button x:ConnectionId='4' x:Name="backButton"                IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}" Foreground="#DE0C38CA" Margin="36,0,0,52"/>
+            <Button x:ConnectionId='5' x:Name="backButton"                IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}" Foreground="#DE0C38CA" Margin="36,0,0,52"/>
             <Image Grid.Column="1" HorizontalAlignment="Right" Height="57" Margin="0,51,167,0" VerticalAlignment="Top" Width="269" Source="Assets/MM-text.png"/>
             <Image Grid.Column="1" HorizontalAlignment="Right" Height="60" Margin="0,52,52,0" VerticalAlignment="Top" Width="100" Source="Assets/MM-logo.png"/>
         </Grid>
 
         <StackPanel Grid.Row="1" Margin="120,30,0,0">
-            <TextBlock Text="What's your name?" Style="{StaticResource BaselineTextStyle}"/>
-            <StackPanel Orientation="Horizontal" Margin="0,20,0,20">
-                <TextBox x:ConnectionId='2' x:Name="nameInput" Width="300" HorizontalAlignment="Left"                                    />
-                <Button x:ConnectionId='3' Content="Say &quot;Hello&quot;"                     />
+            <TextBlock Text="Mail account settings:" Style="{StaticResource BaselineTextStyle}" FontWeight="Bold" FontSize="24"/>
+            <StackPanel Grid.Row="1" Margin="0,30,0,0">
+                <TextBlock Text="POP Server" Style="{StaticResource BaselineTextStyle}" FontWeight="Bold" FontSize="18" Margin="0,0,0,10"/>
+                <TextBox x:ConnectionId='4' x:Name="serverInput" Width="300" HorizontalAlignment="Left"                                      />
             </StackPanel>
-            <TextBlock x:Name="greetingOutput" Style="{StaticResource Output TextStyle}"/>
-            <Button x:ConnectionId='1' Content="Go to Mail Test"                                 />
+            <StackPanel Grid.Row="1" Margin="0,10,0,0">
+                <TextBlock Text="Username" Style="{StaticResource BaselineTextStyle}" FontWeight="Bold" FontSize="18" Margin="0,0,0,10"/>
+                <TextBox x:ConnectionId='3' x:Name="nameInput" Width="300" HorizontalAlignment="Left"                                    />
+            </StackPanel>
+            <StackPanel Grid.Row="1" Margin="0,10,0,0">
+                <TextBlock Text="Password" Style="{StaticResource BaselineTextStyle}" FontWeight="Bold" FontSize="18" Margin="0,0,0,10"/>
+                <PasswordBox x:ConnectionId='2' x:Name="passwordInput" Width="300" HorizontalAlignment="Left"                                                />
+            </StackPanel>
+            <StackPanel Grid.Row="1" Margin="0,30,0,0">
+                <Button x:ConnectionId='1' Content="Check mail"                                  FontSize="28"/>
+            </StackPanel>
+                
+            
         </StackPanel>
 
     </Grid>
