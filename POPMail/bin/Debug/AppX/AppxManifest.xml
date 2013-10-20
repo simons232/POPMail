@@ -22,9 +22,8 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="POPMail.exe" EntryPoint="POPMail.App">
-      <VisualElements DisplayName="POPMail" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="POPMail" ForegroundText="light" BackgroundColor="#464646">
-        <DefaultTile ShowName="allLogos" />
-        <SplashScreen Image="Assets\SplashScreen.png" />
+      <VisualElements DisplayName="POPMail" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="POPMail" ForegroundText="light" BackgroundColor="#ced7f4">
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#ced7f4" />
       </VisualElements>
     </Application>
   </Applications>

@@ -7,68 +7,71 @@
     <PackageArchitecture>neutral</PackageArchitecture>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\POPMail\POPMail\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\POPMail\POPMail\bin\Debug\POPMail.exe">
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\POPMail.exe">
       <PackagePath>POPMail.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\POPMail\POPMail\bin\Debug\POPMail.pdb">
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\POPMail.pdb">
       <PackagePath>POPMail.pdb</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\hpop\OpenPop\bin\Debug\OpenPop.dll">
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\hpop\OpenPop\bin\Debug\OpenPop.dll">
       <PackagePath>OpenPop.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\hpop\OpenPop\bin\Debug\OpenPop.pdb">
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\hpop\OpenPop\bin\Debug\OpenPop.pdb">
       <PackagePath>OpenPop.pdb</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\POPMail\POPMail\Assets\delete.png">
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\Assets\delete.png">
       <PackagePath>Assets\delete.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\POPMail\POPMail\Assets\Logo.png">
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\POPMail\POPMail\Assets\MM-logo.png">
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\Assets\MM-logo.png">
       <PackagePath>Assets\MM-logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\POPMail\POPMail\Assets\refresh.png">
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\Assets\MM-Text.png">
+      <PackagePath>Assets\MM-Text.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\Assets\refresh.png">
       <PackagePath>Assets\refresh.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\POPMail\POPMail\Assets\settings-icon.png">
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\Assets\settings-icon.png">
       <PackagePath>Assets\settings-icon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\POPMail\POPMail\Assets\SmallLogo.png">
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\Assets\SmallLogo.png">
       <PackagePath>Assets\SmallLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\POPMail\POPMail\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\POPMail\POPMail\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\POPMail\POPMail\Common\ReadMe.txt">
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\Common\ReadMe.txt">
       <PackagePath>Common\ReadMe.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\POPMail\POPMail\bin\Debug\App.xaml">
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\App.xaml">
       <PackagePath>App.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\POPMail\POPMail\bin\Debug\MailTest.xaml">
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\MailTest.xaml">
       <PackagePath>MailTest.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\POPMail\POPMail\bin\Debug\MainPage.xaml">
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\POPMail\POPMail\bin\Debug\Common\StandardStyles.xaml">
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simons\Documents\Visual Studio 2012\Projects\POPMail\POPMail\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

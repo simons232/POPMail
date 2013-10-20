@@ -1,39 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-
-  <Identity Name="59f4e951-f7ac-4e93-b7fc-fb98fc104e11"
-            Publisher="CN=Simons"
-            Version="1.0.0.0" />
-
+  <Identity Name="59f4e951-f7ac-4e93-b7fc-fb98fc104e11" Publisher="CN=Simons" Version="1.0.0.0" />
   <Properties>
     <DisplayName>POPMail</DisplayName>
     <PublisherDisplayName>Simons</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
-
   <Prerequisites>
     <OSMinVersion>6.2.1</OSMinVersion>
     <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
   </Prerequisites>
-
   <Resources>
-    <Resource Language="x-generate"/>
+    <Resource Language="x-generate" />
   </Resources>
-
   <Applications>
-    <Application Id="App"
-        Executable="$targetnametoken$.exe"
-        EntryPoint="POPMail.App">
-        <VisualElements
-            DisplayName="POPMail"
-            Logo="Assets\Logo.png"
-            SmallLogo="Assets\SmallLogo.png"
-            Description="POPMail"
-            ForegroundText="light"
-            BackgroundColor="#464646">
-            <DefaultTile ShowName="allLogos" />
-            <SplashScreen Image="Assets\SplashScreen.png" />
-        </VisualElements>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="POPMail.App">
+      <VisualElements DisplayName="POPMail" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="POPMail" ForegroundText="light" BackgroundColor="#ced7f4">
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#ced7f4" />
+      </VisualElements>
     </Application>
   </Applications>
   <Capabilities>

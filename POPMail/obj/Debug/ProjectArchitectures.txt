@@ -1,1 +1,1 @@
-C:\Users\Simons\Documents\Visual Studio 2012\Projects\POPMail\POPMail\POPMail.csproj;neutral
+C:\Users\Simons\documents\visual studio 2012\Projects\POPMail\POPMail\POPMail.csproj;neutral

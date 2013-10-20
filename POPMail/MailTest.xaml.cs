@@ -36,6 +36,8 @@ namespace POPMail
         private Pop3Client PopClient = new Pop3Client();
         private int messageCount = 0;
         public string crlf = Environment.NewLine;
+        private Windows.UI.Xaml.Visibility hidden = Windows.UI.Xaml.Visibility.Collapsed;
+        private Windows.UI.Xaml.Visibility visible = Windows.UI.Xaml.Visibility.Visible;
 
         /// <summary>
         /// Populates the page with content passed during navigation.  Any saved state is also
@@ -48,24 +50,7 @@ namespace POPMail
         /// session.  This will be null the first time a page is visited.</param>
         protected override void LoadState(Object navigationParameter, Dictionary<String, Object> pageState)
         {
-            try
-            {
-                openConnection();
-
-                ItemListView.ItemsSource = FetchAllHeaders();
-
-                closeConnection();
-                
-                MailCount.Text = messageCount.ToString();
-
-                
-            }
-            catch
-            {
-                MailCountLabel.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-                MailCount.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-                MailError.Visibility = Windows.UI.Xaml.Visibility.Visible;
-            }
+            fetchMessageHeaders();
         }
 
         /// <summary>
@@ -94,7 +79,24 @@ namespace POPMail
         {
             PopClient.Disconnect();
         }
-        
+
+        private void fetchMessageHeaders()
+        {
+            try
+            {
+                openConnection();
+                ItemListView.ItemsSource = FetchAllHeaders();
+                closeConnection();
+                MailCount.Text = messageCount.ToString();
+            }
+            catch
+            {
+                MailCountLabel.Visibility = hidden;
+                MailCount.Visibility = hidden;
+                MailError.Visibility = visible;
+            }
+        }
+
         private List<MessageHeader> FetchAllHeaders()
         {
             messageCount = PopClient.GetMessageCount();
@@ -109,6 +111,13 @@ namespace POPMail
         private void ItemListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void RefreshButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            ItemListView.Visibility = hidden;
+            fetchMessageHeaders();
+            ItemListView.Visibility = visible;
         }
     }
 }
