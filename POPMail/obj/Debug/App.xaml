@@ -27,7 +27,7 @@
                                        Foreground="{StaticResource ApplicationForegroundThemeBrush}" Width="370" 
                                        Text="{Binding From}" ToolTipService.ToolTip="{Binding From}"/>
                             <TextBlock Name="MailListDate" TextWrapping="NoWrap" TextTrimming="None" Width="180"
-                                       Text="{Binding Date}" ToolTipService.ToolTip="{Binding Date}"/>
+                                       Text="{Binding DateSent}" ToolTipService.ToolTip="{Binding DateSent}"/>
                         </StackPanel>
                     </StackPanel>
                 </Grid>

@@ -105,7 +105,7 @@ namespace POPMail
             try
             {
                 openConnection();
-                ItemListView.ItemsSource = FetchAllHeaders();
+                MessageListView.ItemsSource = FetchAllHeaders();
                 closeConnection();
                 MailCount.Text = messageCount.ToString();
                 
@@ -140,6 +140,21 @@ namespace POPMail
         private void RefreshButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
             fetchMessageHeaders();
+        }
+
+        private void DeleteButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            var textToDisplay = "";
+            for (var i = 1; i <= MessageListView.SelectedItems.Count; i++ )
+            {
+                //MessageHeader messageHeaderText = (MessageHeader)messageId;
+                //textToDisplay += messageHeaderText.MessageId + " : " + messageHeaderText.DateSent;
+                openConnection();
+                textToDisplay += PopClient.GetMessage(MessageListView.SelectedIndex).FindFirstPlainTextVersion().GetBodyAsText() + " : ";
+                closeConnection();
+            }
+            DebugText.Text = textToDisplay.ToString();
+            DebugText.Visibility = visible;
         }
     }
 }

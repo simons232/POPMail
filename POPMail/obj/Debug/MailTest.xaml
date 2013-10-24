@@ -71,10 +71,11 @@
             <TextBlock x:Name="MailCountLabel" HorizontalAlignment="Left" Height="24" Margin="25,68,0,0" TextWrapping="Wrap" Text="Mail count:" VerticalAlignment="Top" Width="122" FontFamily="Global User Interface" FontSize="24" Grid.Column="1"/>
             <TextBlock x:Name="MailCount" HorizontalAlignment="Left" Margin="152,69,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="top" Height="30" Width="41" FontFamily="Global User Interface" FontSize="24" Grid.Column="1"/>
             <Image x:ConnectionId='3' x:Name="RefreshButton" Grid.Column="1" HorizontalAlignment="Center" Height="50" Margin="366,56,817,0" VerticalAlignment="Top" Width="63" Source="Assets/refresh.png"                              />
-            <Image Grid.Column="1" HorizontalAlignment="Center" Height="50" Margin="438,56,704,0" VerticalAlignment="Top" Width="63" Source="Assets/delete.png"/>
+            <Image x:ConnectionId='4' x:Name="DeleteButton" Grid.Column="1" HorizontalAlignment="Center" Height="50" Margin="438,56,704,0" VerticalAlignment="Top" Width="63" Source="Assets/delete.png"                             />
             <Image Grid.Column="1" HorizontalAlignment="Right" Height="57" Margin="0,51,167,0" VerticalAlignment="Top" Width="269" Source="Assets/MM-text.png"/>
             <Image Grid.Column="1" HorizontalAlignment="Right" Height="60" Margin="0,52,52,0" VerticalAlignment="Top" Width="100" Source="Assets/MM-logo.png"/>
         </Grid>
+        <TextBlock x:Name="DebugText" HorizontalAlignment="Left" Height="35" Margin="130,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="1103" Foreground="#FFDE1E1E" Visibility="Collapsed"/>
 
         <Grid Margin="133,56,133,34" Grid.Row="2" HorizontalAlignment="Center" Width="1100" Background="#FFDCF5FF">
             <StackPanel x:Name="ContentPanel" Orientation="Horizontal" Width="1100" Margin="0,0,0,0">
