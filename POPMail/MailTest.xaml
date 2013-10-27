@@ -78,18 +78,19 @@
         <TextBlock x:Name="DebugText" HorizontalAlignment="Left" Height="35" Margin="130,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="1103" Foreground="#FFDE1E1E" Visibility="Collapsed"/>
 
         <Grid Margin="133,56,133,34" Grid.Row="2" HorizontalAlignment="Center" Width="1100" Background="#FFDCF5FF">
-            <StackPanel x:Name="ContentPanel" Orientation="Horizontal" Width="1100" Margin="0,0,0,0">
-                <ListView x:Name="MessageListView" Width="1100"  
-        		    ItemTemplate="{StaticResource StoreFrontTileTemplate}"
-        		    ItemContainerStyle="{StaticResource StoreFrontLVTileStyle}"
-        		    ScrollViewer.VerticalScrollBarVisibility="Auto"
-        		    ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
-                    SelectionMode="Multiple" 
-                    SelectionChanged="ItemListView_SelectionChanged"/>
-            </StackPanel>
             <TextBlock HorizontalAlignment="Left" Margin="10,-20,0,0" TextWrapping="Wrap" Text="Subject" VerticalAlignment="Top" Width="142" Height="19" FontFamily="Segoe UI Light"/>
             <TextBlock HorizontalAlignment="Left" Margin="560,-20,0,0" TextWrapping="Wrap" Text="From" VerticalAlignment="Top" Width="142" Height="19" FontFamily="Segoe UI Light"/>
             <TextBlock HorizontalAlignment="Left" Margin="930,-20,0,0" TextWrapping="Wrap" Text="Date/Time" VerticalAlignment="Top" Width="142" Height="19" FontFamily="Segoe UI Light"/>
+            <StackPanel x:Name="ContentPanel" Orientation="Horizontal" Width="1100" Margin="0,0,0,0">
+                <ListView x:Name="MessageListView" Width="1100" 
+                    Padding="0,0,20,0"
+        		    ItemTemplate="{StaticResource StoreFrontTileTemplate}"
+        		    ItemContainerStyle="{StaticResource StoreFrontLVTileStyle}"
+        		    ScrollViewer.VerticalScrollBarVisibility="Visible" 
+        		    ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+                    SelectionMode="Multiple" 
+                    SelectionChanged="ItemListView_SelectionChanged" FontFamily="Global User Interface"/>
+            </StackPanel>
         </Grid>
 
 

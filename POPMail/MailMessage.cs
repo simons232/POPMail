@@ -11,9 +11,16 @@ using OpenPop.Pop3;
 
 namespace POPMail
 {
-    public interface IMailMessage
+    public class MailMessage
     {
-        MessageHeader mailHeader { get; set; }
-        int mailSize { get; set; }
+        private MessageHeader mailHeader;
+        private List<MessageHeader> mailHeaders;
+        private int mailSize;
+        private int mailId;
+
+        public MailMessage(List<MessageHeader> MailHeaders)
+        {
+            this.mailHeaders = MailHeaders;
+        }
     }
 }
