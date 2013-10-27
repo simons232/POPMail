@@ -62,9 +62,16 @@ namespace POPMail
         /// <param name="pageState">An empty dictionary to be populated with serializable state.</param>
         private void MailTestPageButton_Click(object sender, RoutedEventArgs e)
         {
-            if (this.Frame != null)
+            if (string.IsNullOrEmpty(serverInput.Text) || string.IsNullOrEmpty(nameInput.Text) || string.IsNullOrEmpty(passwordInput.Password))
             {
-                this.Frame.Navigate(typeof(MailTest));
+                inputError.Text = "All fields are required in order to continue. Please enter the mail account details and try again.";
+            }
+            else
+            {
+                if (this.Frame != null)
+                {
+                    this.Frame.Navigate(typeof(MailTest));
+                }
             }
         }
 

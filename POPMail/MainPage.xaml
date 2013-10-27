@@ -84,23 +84,14 @@
 
         <StackPanel Grid.Row="1" Margin="120,30,0,0">
             <TextBlock Text="Mail account settings:" Style="{StaticResource BaselineTextStyle}" FontWeight="Bold" FontSize="24"/>
-            <StackPanel Grid.Row="1" Margin="0,30,0,0">
-                <TextBlock Text="POP Server" Style="{StaticResource BaselineTextStyle}" FontWeight="Bold" FontSize="18" Margin="0,0,0,10"/>
-                <TextBox x:Name="serverInput" Width="300" HorizontalAlignment="Left" TextChanged="serverInput_TextChanged"/>
-            </StackPanel>
-            <StackPanel Grid.Row="1" Margin="0,10,0,0">
-                <TextBlock Text="Username" Style="{StaticResource BaselineTextStyle}" FontWeight="Bold" FontSize="18" Margin="0,0,0,10"/>
-                <TextBox x:Name="nameInput" Width="300" HorizontalAlignment="Left" TextChanged="nameInput_TextChanged"/>
-            </StackPanel>
-            <StackPanel Grid.Row="1" Margin="0,10,0,0">
-                <TextBlock Text="Password" Style="{StaticResource BaselineTextStyle}" FontWeight="Bold" FontSize="18" Margin="0,0,0,10"/>
-                <PasswordBox x:Name="passwordInput" Width="300" HorizontalAlignment="Left" PasswordChanged="passwordInput_PasswordChanged"/>
-            </StackPanel>
-            <StackPanel Grid.Row="1" Margin="0,30,0,0">
-                <Button Content="Check mail" Click="MailTestPageButton_Click" FontSize="28"/>
-            </StackPanel>
-                
-            
+            <TextBlock Text="POP Server" Style="{StaticResource BaselineTextStyle}" FontWeight="Bold" FontSize="18" Margin="0,30,0,10"/>
+            <TextBox x:Name="serverInput" Width="300" HorizontalAlignment="Left" TextChanged="serverInput_TextChanged"/>
+            <TextBlock Text="Username" Style="{StaticResource BaselineTextStyle}" FontWeight="Bold" FontSize="18" Margin="0,10,0,10"/>
+            <TextBox x:Name="nameInput" Width="300" HorizontalAlignment="Left" TextChanged="nameInput_TextChanged"/>
+            <TextBlock Text="Password" Style="{StaticResource BaselineTextStyle}" FontWeight="Bold" FontSize="18" Margin="0,10,0,10"/>
+            <PasswordBox x:Name="passwordInput" Width="300" HorizontalAlignment="Left" PasswordChanged="passwordInput_PasswordChanged"/>
+            <Button Name="MailTestPageButton" Content="Check mail" Click="MailTestPageButton_Click" FontSize="28" Margin="0,30,0,0"/>
+            <TextBlock x:Name="inputError" TextWrapping="Wrap" Text="" Margin="0,30,0,0" FontFamily="Global User Interface" FontSize="24" Foreground="#FFDE1E1E"/>
         </StackPanel>
 
     </Grid>

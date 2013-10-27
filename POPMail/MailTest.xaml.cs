@@ -102,6 +102,7 @@ namespace POPMail
             MailRefresh.Visibility = visible;
             MailCountLabel.Visibility = hidden;
             MailCount.Visibility = hidden;
+            MailError.Visibility = hidden;
             try
             {
                 openConnection();
@@ -112,12 +113,14 @@ namespace POPMail
                 MailCountLabel.Visibility = visible;
                 MailCount.Visibility = visible;
                 MailRefresh.Visibility = hidden;
+                MailError.Visibility = hidden;
             }
             catch
             {
                 MailCountLabel.Visibility = hidden;
                 MailCount.Visibility = hidden;
                 MailError.Visibility = visible;
+                MailRefresh.Visibility = hidden;
             }
         }
 
